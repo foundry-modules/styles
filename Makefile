@@ -1,4 +1,4 @@
-all: create-style-folder copy-less-files
+all: create-style-folder copy-less-files copy-images
 
 include ../../build/modules.mk
 
@@ -8,3 +8,6 @@ SOURCE_STYLE_FOLDER = .
 
 copy-less-files:
 	cp *.less ${TARGET_STYLE_FOLDER}
+
+copy-images:
+	cp -R images ${TARGET_STYLE_FOLDER}/..
