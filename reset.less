@@ -7,10 +7,28 @@
 *:after {
 	//safe to use width:100% without caring the padding
 	.box-sizing(border-box);
-	
+
 	// Reset to prevent templates using min-height mess up ES input fields and images
 	min-width: 0;
 	min-height: 0;
+}
+
+//reset some HTML5 elements
+header,
+nav,
+figure,
+article,
+aside,
+footer {
+	padding: 0;
+	margin: 0;
+	display: block;
+	background: none;
+	border: 0;
+	width: auto;
+	height: auto;
+	float: none;
+	position: static;
 }
 
 //reset some template add in value to :before :after
@@ -112,7 +130,7 @@ hr {
 	border-bottom: 1px solid transparent;
 }
 
-// previously global font-size 11px class 
+// previously global font-size 11px class
 .fd-small {
 	font-size:11px;
 	margin:auto;
