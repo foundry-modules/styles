@@ -2,6 +2,12 @@
 	Scaffolding/Reset
 \*------------------------------------*/
 // reset to prevent conflict for Joomla Template
+
+// Prevent templates globally align center
+& {
+	text-align: left;
+}
+
 *,
 *:before,
 *:after {
@@ -29,6 +35,9 @@ footer {
 	height: auto;
 	float: none;
 	position: static;
+	text-align: inherit;
+	font-size: inherit;
+	font-family: inherit;
 }
 
 //reset some template add in value to :before :after
@@ -36,6 +45,7 @@ footer {
 ul,ol,li {
 	margin: 0;
 	padding: 0;
+	border: none;
 	// list-style: none;
 	&:before,
 	&:after {
@@ -74,6 +84,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  margin: 0;
 }
 
 
