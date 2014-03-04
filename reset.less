@@ -19,25 +19,35 @@
 	min-height: 0;
 }
 
-//reset some HTML5 elements
+//reset some HTML elements
+blockquote,
 header,
 nav,
 figure,
 article,
 aside,
-footer {
+footer,
+form {
+	// box model
 	padding: 0;
 	margin: 0;
-	display: block;
-	background: none;
-	border: 0;
 	width: auto;
 	height: auto;
+	border: 0;
+	outline: 0;
+
+	// layout
 	float: none;
 	position: static;
+	display: block;
+	background: none;
+
+	// text
 	text-align: inherit;
 	font-size: inherit;
 	font-family: inherit;
+	text-shadow: none;
+
 }
 
 //reset some template add in value to :before :after
@@ -151,3 +161,4 @@ hr {
 		font-size: 11px;
 	}
 }
+
