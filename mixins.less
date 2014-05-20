@@ -1,6 +1,22 @@
+// Custom mixins
+// ----------------
+
 .no-focus-outline() {
 	outline: none !important;
 	&::-moz-focus-inner {
 		border: 0 !important;
 	}
+}
+
+// DISPLAY: AS TABLE
+
+.table()
+{
+    display: table;
+    width: 100%;
+}
+.table-cell()
+{
+    display: table-cell;
+    vertical-align: top;
 }
