@@ -50,20 +50,27 @@ form {
 
 }
 
+// Apply for <ul> <ol> ONLY
 //reset some template add in value to :before :after
 //e.g.: <li> with bullet
-ul,ol,li {
-	margin: 0;
-	padding: 0;
-	border: none;
+.fd-reset-list,
+.fd-reset-list > li {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
     background: none;
-	// list-style: none;
-	&:before,
-	&:after {
-		background: none;
-		display: none;
-	}
+    clear: none;
+    float: none;
+    list-style: none;
+    list-style-image: none;
+    overflow: visible;
+    &:before,
+    &:after {
+        display: none;
+    }
 }
+
 tr, td {
 	border: 1px  solid transparent;
 }
