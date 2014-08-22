@@ -13,10 +13,13 @@
 *:after {
 	//safe to use width:100% without caring the padding
 	.box-sizing(border-box);
+}
 
-	// Reset to prevent templates using min-height mess up ES input fields and images
-	min-width: 0;
-	min-height: 0;
+img,
+input {
+    // Reset to prevent templates using min-height mess up ES input fields and images
+    min-width: 0;
+    min-height: 0;
 }
 
 //reset some HTML elements
