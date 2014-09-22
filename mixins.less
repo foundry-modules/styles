@@ -8,21 +8,38 @@
 	}
 }
 
+.fd-reset-list() {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	clear: none;
+	float: none;
+	list-style: none;
+	list-style-image: none;
+	overflow: visible;
+	&:before,
+	&:after {
+		display: none;
+	}
+}
+
 // DISPLAY: AS TABLE
 
 .table()
 {
-    display: table;
-    width: 100%;
+	display: table;
+	width: 100%;
 }
 .table-cell()
 {
-    display: table-cell;
-    vertical-align: top;
+	display: table-cell;
+	vertical-align: top;
 }
 
 /*------------------------------------*\
-    $contrast - contrast.less
+	$contrast - contrast.less
 \*------------------------------------*/
 
 // Contrast text color base on background
@@ -33,11 +50,11 @@
 //     .getContrast(@bgcolor) !important;
 // }
 .getContrast(@color) when (iscolor(@color)) {
-  .return_contrast_color(@yiq) when (@yiq >= 128) { color: rgba(0, 0, 0, 0.8); }
-  .return_contrast_color(@yiq) when (@yiq < 128)  { color: rgba(255, 255, 255, 0.8); }
-  @r: red(@color);
-  @g: green(@color);
-  @b: blue(@color);
-  @yiq: ((@r*299)+(@g*587)+(@b*114))/1000;
-  .return_contrast_color(@yiq);
+	.return_contrast_color(@yiq) when (@yiq >= 128) { color: rgba(0, 0, 0, 0.8); }
+	.return_contrast_color(@yiq) when (@yiq < 128)  { color: rgba(255, 255, 255, 0.8); }
+	@r: red(@color);
+	@g: green(@color);
+	@b: blue(@color);
+	@yiq: ((@r*299)+(@g*587)+(@b*114))/1000;
+	.return_contrast_color(@yiq);
 }
